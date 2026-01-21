@@ -1,0 +1,87 @@
+/* ================= SECTION ================= */
+.browse-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+/* ================= TITLE ================= */
+.browse-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+/* ================= ROW ================= */
+.browse-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+/* ================= CARD ================= */
+.browse-card {
+  width: 160px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ================= IMAGE BOX ================= */
+.browse-img-box {
+  height: 160px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.browse-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.browse-card:hover .browse-img-box {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= NAME ================= */
+.browse-name {
+  font-size: 15px;
+  font-weight: 550;
+  color: #111827;
+}
+/* ================= LINK RESET ================= */
+.browse-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.browse-link:hover,
+.browse-link:focus,
+.browse-link:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .browse-row {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .browse-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .browse-card {
+    min-width: 130px;
+  }
+}
