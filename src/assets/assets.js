@@ -6,6 +6,12 @@ import banner_2 from "./banner_2.png";
 import banner_3 from "./banner_3.png";
 import logo from "./logo.png";
 
+// Footer images
+import google_play from "./footer_img/google-play.svg";
+import app_store from "./footer_img/appStore.png";
+import play_store from "./footer_img/playStore.png";
+import online_payment from "./footer_img/onlinePaymentoption.png";
+
 import Food from "./Food.png";
 import Elderly_care from "./Elderly_care.png";
 import Home_Care from "./Home_Care.png";
@@ -18,7 +24,7 @@ import Ketoscalp from "./Ketoscalp.png";
 import KushalKanthil from "./KushalKanthil.png";
 import MoscoSoap from "./MoscoSoap.png";
 import Piligrim from "./Piligrim.png";
-import Relispra  from "./Relispra.png";
+import Relispra from "./Relispra.png";
 import Volicorgel from "./Volicorgel.png";
 import Cadebuury from "./Cadebuury.png";
 import bodywise from "./bodywise.png";
@@ -57,7 +63,7 @@ import Lifebuoy_Hand_Sanitizer from "./Lifebuoy_Hand_Sanitizer.jpg";
 
 import lizol from "./lizol.jpg";
 import Harpic from "./Harpic.jpg";
-import surfexcel from "./surfexcel.webp"; 
+import surfexcel from "./surfexcel.webp";
 import dettol from "./Dettol.jpg";
 import vimdishwash from "./vimdishwash.jpg";
 
@@ -71,7 +77,7 @@ import mamaearth from "./mamaearth.webp";
 
 
 
-import cadbury  from "./cadbury.webp";
+import cadbury from "./cadbury.webp";
 import Amulmilk from "./Amulmilk.jpg";
 import QuakerOats from "./QuakerOats.jpg";
 import AmulButter from "./AmulButter.jpg";
@@ -101,76 +107,80 @@ import skore from "./skore.jpg"
 
 export const assets = {
 
-    banner_1,
-    banner_2,
-    banner_3,
-    logo,
-    Food,
-    Elderly_care,
-    Home_Care,
-    Personalcare,
-    Pet_Supplies,
-    Self_Care,
-    Sexual_Wellness,
-    mom_baby,
-    Ketoscalp,
-    KushalKanthil,
-    MoscoSoap,
-    Piligrim,
-    Relispra,
-    Volicorgel,
-    Cadebuury,
-    bodywise,
-    Oxynasocan,
-    Vaseline,
-    PondsPure,
-    OtrivinOxy,
-    Moisturizser,
-    bodybombay,
-    nebuliser,
-    Horlicks,
-    medicine_icon,
-    whatsapp_icon,
-    wellness_icon,
-    location_icon,
-    himalaya_baby_lotion,
-    pampers_diapers,
-    johnsons_shampoo,
-    cerelac,
-    Medela_Breast_pump,
-    bp_monitor,
-    Glucometer,
-    Ageas_Walker,
-    Protinex_Vanilla,
-    Dabur_Chyawanprash,
-    Vicks_Vaporub,
-    Dettol_Hand_Wash,
-    Lifebuoy_Hand_Sanitizer,
-    lizol,
-    Harpic,
-    surfexcel,
-    dettol,
-    vimdishwash,
-    nivealotion,
-    dovesoap,
-    garnierfacewash,
-    colgate,
-    mamaearth,
- cadbury,
- Amulmilk,
- QuakerOats,
- AmulButter,
-    Maggi,
-    pedigree,
-    whiskas,
-    droolschicken,
-    PetSafeDogLeash,
-    petbowlset,
-    durex,
-    manforce,
-    lubricant,
- kamsutra,
- skore
+   banner_1,
+   banner_2,
+   banner_3,
+   logo,
+   google_play,
+   app_store,
+   play_store,
+   online_payment,
+   Food,
+   Elderly_care,
+   Home_Care,
+   Personalcare,
+   Pet_Supplies,
+   Self_Care,
+   Sexual_Wellness,
+   mom_baby,
+   Ketoscalp,
+   KushalKanthil,
+   MoscoSoap,
+   Piligrim,
+   Relispra,
+   Volicorgel,
+   Cadebuury,
+   bodywise,
+   Oxynasocan,
+   Vaseline,
+   PondsPure,
+   OtrivinOxy,
+   Moisturizser,
+   bodybombay,
+   nebuliser,
+   Horlicks,
+   medicine_icon,
+   whatsapp_icon,
+   wellness_icon,
+   location_icon,
+   himalaya_baby_lotion,
+   pampers_diapers,
+   johnsons_shampoo,
+   cerelac,
+   Medela_Breast_pump,
+   bp_monitor,
+   Glucometer,
+   Ageas_Walker,
+   Protinex_Vanilla,
+   Dabur_Chyawanprash,
+   Vicks_Vaporub,
+   Dettol_Hand_Wash,
+   Lifebuoy_Hand_Sanitizer,
+   lizol,
+   Harpic,
+   surfexcel,
+   dettol,
+   vimdishwash,
+   nivealotion,
+   dovesoap,
+   garnierfacewash,
+   colgate,
+   mamaearth,
+   cadbury,
+   Amulmilk,
+   QuakerOats,
+   AmulButter,
+   Maggi,
+   pedigree,
+   whiskas,
+   droolschicken,
+   PetSafeDogLeash,
+   petbowlset,
+   durex,
+   manforce,
+   lubricant,
+   kamsutra,
+   skore
 
 
 

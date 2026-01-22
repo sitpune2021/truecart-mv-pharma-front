@@ -2,13 +2,18 @@ import { useParams, Link } from "react-router-dom";
 import { products } from "../../data/products";
 import { useState } from "react";
 import "./ProductDetails.css";
-import Trending from "../../Components/Trending/Trending";
+import { Slide } from "@mui/material";
+import SliderSection from "../SliderSection/SliderSection";
+
 
 
 
 const ProductDetails = () => {
   /* ================= PARAMS ================= */
   const { slug } = useParams();
+
+  const similarProducts = products.filter((item) => [14, 15, 16, 17, 21, 22, 23, 24].includes(item.id));
+
 
   /* ================= STATE ================= */
   const [qty, setQty] = useState(1);
@@ -159,9 +164,11 @@ const ProductDetails = () => {
 
 
       {/* ===== RELATED PRODUCTS ===== */}
-      <Trending
-        category={product.category}
-        excludeId={product.id}
+      <SliderSection
+        title="Similar Products"
+        products={similarProducts}
+        viewAllLink="/category/new-arrivals"
+
       />
     </section>
   );

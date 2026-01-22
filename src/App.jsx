@@ -1,8 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
+import Navbar from "./Components/comman/Navbar/Navbar";
+import Footer from "./Components/comman/Footer/Footer";
+import ScrollToTop from "./Components/comman/ScrollToTop/ScrollToTop";
 
 import Home from "./Pages/Home/Home";
 import Medicines from "./Pages/Medicines/Medicines";
@@ -10,12 +11,14 @@ import Offerings from "./Pages/Offerings/Offerings";
 import Stores from "./Pages/Stores/Stores";
 
 import CategoryListing from "./Pages/CategoryListing/CategoryListing";
-import ProductDetails from "./Pages/Product/ProductDetails";
+
 import NotFound from "./Pages/NotFound";
+import ProductDetails from "./Components/ProductDetails/ProductDetails";
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

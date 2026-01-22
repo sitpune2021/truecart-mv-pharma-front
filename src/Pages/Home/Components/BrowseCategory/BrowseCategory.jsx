@@ -1,5 +1,5 @@
 import "./BrowseCategory.css";
-import { assets } from "../../assets/assets";
+import { assets } from "../../../../assets/assets";
 import { Link } from "react-router-dom";
 
 const categories = [
