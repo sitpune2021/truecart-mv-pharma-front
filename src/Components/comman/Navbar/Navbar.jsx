@@ -285,18 +285,18 @@ const bottomNavData = [
   },
 
 
-  {
-    title: "Home Care",
-    sections: [
-      {
-        title: "Cleaning",
-        links: [
-          { label: "Floor Cleaner", path: "/floor-cleaner" },
-          { label: "Dishwash", path: "/dishwash" },
-        ],
-      },
-    ],
-  },
+  // {
+  //   title: "Home Care",
+  //   sections: [
+  //     {
+  //       title: "Cleaning",
+  //       links: [
+  //         { label: "Floor Cleaner", path: "/floor-cleaner" },
+  //         { label: "Dishwash", path: "/dishwash" },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   {
     title: "Ortho Belts & Supports",

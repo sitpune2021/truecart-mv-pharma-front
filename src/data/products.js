@@ -1458,7 +1458,7 @@ export const products = [
         flavour: "N/A",
         price: 35,
         mrp: 40,
-        image: assets.paracetamol_650,
+        image: assets.paracetamol,
         description: `Paracetamol 650mg is commonly used to reduce fever and relieve mild to moderate pain.
 
 • Effective for fever and headache  
@@ -1477,7 +1477,7 @@ export const products = [
         flavour: "N/A",
         price: 52,
         mrp: 60,
-        image: assets.ibuprofen_400,
+        image: assets.ibuprofen,
         description: `Ibuprofen 400mg helps relieve pain, inflammation, and fever.
 
 • Effective anti-inflammatory  
@@ -1496,7 +1496,7 @@ export const products = [
         flavour: "N/A",
         price: 18,
         mrp: 25,
-        image: assets.cetirizine_10,
+        image: assets.cetirizine,
         description: `Cetirizine 10mg provides relief from allergy symptoms.
 
 • Reduces sneezing and itching  
@@ -1515,7 +1515,7 @@ export const products = [
         flavour: "N/A",
         price: 120,
         mrp: 145,
-        image: assets.azithromycin_500,
+        image: assets.azithromycin,
         description: `Azithromycin 500mg is a broad-spectrum antibiotic.
 
 • Treats bacterial infections  
@@ -1610,7 +1610,7 @@ export const products = [
         flavour: "N/A",
         price: 210,
         mrp: 240,
-        image: assets.calcium_d3,
+        image: assets.calcium,
         description: `Calcium with Vitamin D3 supports bone and joint health.
 
 • Strengthens bones  
@@ -1629,14 +1629,52 @@ export const products = [
         flavour: "N/A",
         price: 85,
         mrp: 100,
-        image: assets.pantoprazole_40,
+        image: assets.pantoprazole,
         description: `Pantoprazole 40mg reduces stomach acid production.
 
 • Treats acid reflux  
 • Relieves heartburn  
 • Gastro-protective medicine  
 • Take before meals`,
+    },
+        {
+        id: 101,
+        name: "Paracetamol 650mg",
+        slug: "paracetamol-650mg",
+        brand: "Cipla",
+        category: "medicine",
+        subCategory: "tablet",
+        flavour: "N/A",
+        price: 35,
+        mrp: 40,
+        image: assets.paracetamol,
+        description: `Paracetamol 650mg is commonly used to reduce fever and relieve mild to moderate pain.
+
+• Effective for fever and headache  
+• Trusted pain relief medicine  
+• Suitable for adults  
+• Widely prescribed`,
+    },
+
+    {
+        id: 102,
+        name: "Ibuprofen 400mg",
+        slug: "ibuprofen-400mg",
+        brand: "Abbott",
+        category: "medicine",
+        subCategory: "tablet",
+        flavour: "N/A",
+        price: 52,
+        mrp: 60,
+        image: assets.ibuprofen,
+        description: `Ibuprofen 400mg helps relieve pain, inflammation, and fever.
+
+• Effective anti-inflammatory  
+• Relieves muscle and joint pain  
+• Suitable for short-term use  
+• Fast-acting relief`,
     }
+
 
 
 

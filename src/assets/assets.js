@@ -98,7 +98,19 @@ import durex from "./durex.jpg";
 import manforce from "./manforce.jpg";
 import lubricant from "./lubricant.png";
 import kamsutra from "./kamsutra.jpg";
-import skore from "./skore.jpg"
+import skore from "./skore.jpg";
+
+
+import paracetamol from "./paracetamol.jpg";
+import cetirizine  from "./cetirizine.jpg"; 
+import ibuprofen from  "./ibuprofen.jpg"
+import azithromycin from "./azithromycin.jpg"
+import vitamin_c from "./vitamin_c.jpg";
+import ors_powder from "./ors_powder.jpg"
+import cough_syrup  from "./cough_syrup.jpg"
+import digene_liquid  from "./digene_liquid.jpg";
+import calcium from "./calcium.jpg";
+import pantoprazole from "./pantoprazole.jpg"
 
 
 
@@ -180,8 +192,18 @@ export const assets = {
    manforce,
    lubricant,
    kamsutra,
-   skore
+   skore,
 
+paracetamol,
+cetirizine,
+ibuprofen,
+azithromycin,
+vitamin_c,
+ors_powder,
+cough_syrup,
+digene_liquid,
+calcium,
+pantoprazole
 
 
 

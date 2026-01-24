@@ -244,7 +244,7 @@ html, body {
 }
 
 .mega-section ul {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .mega-section li {
@@ -396,7 +396,7 @@ html, body {
 }
 
 .mobile-menu ul {
-  list-style: none;
+  /* list-style: none; */
   margin-top: 6px;
 }
 
