@@ -543,7 +543,6 @@ const Navbar = () => {
 
 
 
-            <span className="nav-item">Offers</span>
             <CartIcon />
             <PhoneIcon />
           </div>
@@ -553,10 +552,10 @@ const Navbar = () => {
             <Link to="/medicines" className="middle-item">
               All Medicines
             </Link>
-
+{/* 
             <Link to="/offerings" className="middle-item">
               Treucart Offerings
-            </Link>
+            </Link> */}
 
             <Link to="/stores" className="middle-item">
               Store Locator
@@ -814,82 +813,86 @@ const Navbar = () => {
 
 
       {/* ================= ORDER EASY (RESPONSIVE) ================= */}
-      {showOrderEasy && (
-        window.innerWidth <= 768 ? (
-          /* ---------- MOBILE BOTTOM SHEET ---------- */
-          <div
-            className="order-easy-overlay"
-            onClick={() => setShowOrderEasy(false)}
-          >
-            <div
-              className="order-easy-modal"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="order-easy-header">
-                Upload Prescription
-                <button onClick={() => setShowOrderEasy(false)}>✕</button>
-              </div>
+     {/* ================= ORDER EASY (UPDATED UI) ================= */}
+{showOrderEasy && (
+  window.innerWidth <= 768 ? (
+    /* ---------- MOBILE BOTTOM SHEET ---------- */
+    <div
+      className="order-easy-overlay"
+      onClick={() => setShowOrderEasy(false)}
+    >
+      <div
+        className="order-easy-modal modern"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="order-easy-header">
+          <h3>Order Medicines Easily</h3>
+          <button onClick={() => setShowOrderEasy(false)}>✕</button>
+        </div>
 
-              <div className="order-easy-actions">
-                <label className="order-easy-btn">
-                  📷 Take Photo
-                  <input
-                    type="file"
-                    accept="image/*"
-                    capture="environment"
-                    hidden
-                  />
-                </label>
+        <p className="order-easy-subtext">
+          Upload your doctor’s prescription and we’ll take care of the rest.
+        </p>
 
-                <label className="order-easy-btn">
-                  🖼️ Upload from Gallery
-                  <input
-                    type="file"
-                    accept="image/*"
-                    hidden
-                  />
-                </label>
-              </div>
-            </div>
-          </div>
-        ) : (
-          /* ---------- DESKTOP CENTER POPUP ---------- */
-          <div
-            className="order-easy-desktop-overlay"
-            onClick={() => setShowOrderEasy(false)}
-          >
-            <div
-              className="order-easy-desktop-modal"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="order-easy-header">
-                Upload Prescription
-                <button onClick={() => setShowOrderEasy(false)}>✕</button>
-              </div>
+        <div className="order-easy-actions">
+          <label className="order-easy-btn primary">
+            📷 Take Photo
+            <input
+              type="file"
+              accept="image/*"
+              capture="environment"
+              hidden
+            />
+          </label>
 
-              <div className="order-easy-actions">
-                <label className="order-easy-btn">
-                  📷 Take Photo
-                  <input
-                    type="file"
-                    accept="image/*"
-                    hidden
-                  />
-                </label>
+          <label className="order-easy-btn outline">
+            🖼 Upload from Gallery
+            <input
+              type="file"
+              accept="image/*"
+              hidden
+            />
+          </label>
+        </div>
 
-                <label className="order-easy-btn">
-                  🖼️ Upload from Gallery
-                  <input
-                    type="file"
-                    accept="image/*"
-                    hidden
-                  />
-                </label>
-              </div>
-            </div>
-          </div>
-        )
-      )}
+        <div className="order-easy-footer">
+          🔒 Your prescription is 100% secure
+        </div>
+      </div>
+    </div>
+  ) : (
+    /* ---------- DESKTOP CENTER POPUP ---------- */
+    <div
+      className="order-easy-desktop-overlay"
+      onClick={() => setShowOrderEasy(false)}
+    >
+      <div
+        className="order-easy-desktop-modal modern"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="order-easy-header">
+          <h3>Upload Prescription</h3>
+          <button onClick={() => setShowOrderEasy(false)}>✕</button>
+        </div>
+
+        <p className="order-easy-subtext">
+          Drag & drop your prescription or upload a file
+        </p>
+
+        <label className="order-easy-dropzone">
+          ⬆ Drop prescription here  
+          <span>or click to browse</span>
+          <input type="file" accept="image/*,.pdf" hidden />
+        </label>
+
+        <div className="order-easy-footer">
+          ✔ Valid prescription required • 🔒 Secure & Private
+        </div>
+      </div>
+    </div>
+  )
+)}
+
 
 
 

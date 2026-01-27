@@ -1,0 +1,107 @@
+/* ================= BLOG DETAILS PAGE ================= */
+
+.blog-details {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) 1rem;
+}
+
+/* ================= HERO IMAGE (NO CROPPING) ================= */
+.blog-details img {
+  width: 100%;
+  height: auto;                /* natural height */
+  max-height: 420px;           /* keeps layout clean */
+  object-fit: contain;         /* 🔑 NO CROPPING */
+  object-position: center;
+  background: #f1f5f9;         /* fills empty space */
+  padding: 12px;
+  border-radius: 18px;
+  margin-bottom: 1.8rem;
+}
+
+/* ================= CONTENT WRAPPER ================= */
+.details-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ================= META ================= */
+.blog-details .blog-meta {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+/* ================= TITLE ================= */
+.blog-details h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+/* ================= AUTHOR ================= */
+.blog-author {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 1.6rem;
+}
+
+/* ================= BLOG CONTENT ================= */
+.blog-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #334155;
+  white-space: pre-line; /* keeps paragraph breaks */
+}
+
+/* ================= BACK BUTTON ================= */
+.back-btn {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .blog-details img {
+    max-height: 320px;
+    padding: 10px;
+  }
+
+  .blog-text {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .blog-details img {
+    max-height: 260px;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .blog-details h1 {
+    font-size: 1.6rem;
+  }
+
+  .blog-text {
+    font-size: 0.95rem;
+  }
+}

@@ -114,6 +114,14 @@ import pantoprazole from "./pantoprazole.jpg"
 
 
 
+import True_cart_store from "./True_cart_store.png"
+import blogimage from "./blogimage.jpeg"
+import blogimagetwo from"./blogimagetwo.jpg"
+import blogimagethree from "./blogimagethree.webp"
+import blogimagefour  from "./blogimagefour.jpg"
+
+
+
 
 
 
@@ -203,8 +211,14 @@ ors_powder,
 cough_syrup,
 digene_liquid,
 calcium,
-pantoprazole
+pantoprazole,
 
+
+True_cart_store,
+blogimage,
+blogimagetwo,
+blogimagethree,
+blogimagefour
 
 
 

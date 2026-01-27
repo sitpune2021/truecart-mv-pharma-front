@@ -1,5 +1,7 @@
 import "./Footer.css";
 import { assets } from "../../../assets/assets";
+import { Link } from "react-router-dom";
+
 import { FaUsers, FaMapMarkerAlt, FaBoxOpen, FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube, FaStore } from "react-icons/fa";
 
 const Footer = () => {
@@ -82,18 +84,34 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Company</h4>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Franchise</a></li>
+                <li>
+                  <Link to="/about-us">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/contact-us">Contact Us</Link>
+                </li>
+                <li>
+                  <Link to="/careers">Careers</Link>
+                </li>
+
+                <li>
+                  <Link to="/blogs">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/franchise">Franchise</Link>
+                </li>
+
+
+
               </ul>
+
             </div>
 
             <div className="footer-column">
               <h4>Our Services</h4>
               <ul>
-                <li><a href="#">Order Medicines</a></li>
+                <li><Link to="/medicines">Order Medicines</Link></li>
+
                 <li><a href="#">Lab Tests</a></li>
                 <li><a href="#">Generic Medicines</a></li>
                 <li><a href="#">Health Packages</a></li>
@@ -105,22 +123,32 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Quick Links</h4>
               <ul>
-                <li><a href="#">Browse All Medicines</a></li>
+                <li><Link to="/medicines">Browse All Medicines</Link></li>
                 <li><a href="#">Browse All Molecules</a></li>
-                <li><a href="#">Find Store Near You</a></li>
-                <li><a href="#">Pharmacy Near You</a></li>
-                <li><a href="#">Health Articles</a></li>
+                <li><Link to="/stores">Find Store Near You</Link></li>
+                <li><Link to="/stores">Pharmacy Near You</Link></li>
+                <li><Link to="/blogs">Health Articles</Link></li>
               </ul>
             </div>
 
             <div className="footer-column">
               <h4>Policies</h4>
               <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Return & Refund</a></li>
-                <li><a href="#">Shipping Policy</a></li>
-                <li><a href="#">Payment Policy</a></li>
+                <li>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/terms-conditions">Terms & Conditions</Link>
+                </li>
+                <li>
+                  <Link to="/return-refund">Return & Refund</Link>
+                </li>
+                <li>
+                  <Link to="/shipping-policy">Shipping Policy</Link>
+                </li>
+                <li>
+                  <Link to="/payment-policy">Payment Policy</Link>
+                </li>
               </ul>
             </div>
           </div>
